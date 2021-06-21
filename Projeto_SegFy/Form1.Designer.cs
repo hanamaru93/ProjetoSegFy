@@ -41,6 +41,7 @@ namespace Projeto_SegFy
             // btn_buscarVideosDoYouTube
             // 
             this.btn_buscarVideosDoYouTube.BackColor = System.Drawing.Color.BlueViolet;
+            this.btn_buscarVideosDoYouTube.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_buscarVideosDoYouTube.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btn_buscarVideosDoYouTube.Location = new System.Drawing.Point(104, 161);
             this.btn_buscarVideosDoYouTube.Name = "btn_buscarVideosDoYouTube";
@@ -53,6 +54,7 @@ namespace Projeto_SegFy
             // btn_BuscarNoBanco
             // 
             this.btn_BuscarNoBanco.BackColor = System.Drawing.Color.CadetBlue;
+            this.btn_BuscarNoBanco.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_BuscarNoBanco.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_BuscarNoBanco.Location = new System.Drawing.Point(506, 161);
             this.btn_BuscarNoBanco.Name = "btn_BuscarNoBanco";
@@ -65,6 +67,7 @@ namespace Projeto_SegFy
             // btn_BuscarCanaisNoYoutube
             // 
             this.btn_BuscarCanaisNoYoutube.BackColor = System.Drawing.Color.Chocolate;
+            this.btn_BuscarCanaisNoYoutube.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_BuscarCanaisNoYoutube.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_BuscarCanaisNoYoutube.Location = new System.Drawing.Point(104, 241);
             this.btn_BuscarCanaisNoYoutube.Name = "btn_BuscarCanaisNoYoutube";
@@ -77,6 +80,7 @@ namespace Projeto_SegFy
             // btn_BuscarCanaisNoBancoDeDados
             // 
             this.btn_BuscarCanaisNoBancoDeDados.BackColor = System.Drawing.Color.YellowGreen;
+            this.btn_BuscarCanaisNoBancoDeDados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_BuscarCanaisNoBancoDeDados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_BuscarCanaisNoBancoDeDados.Location = new System.Drawing.Point(506, 241);
             this.btn_BuscarCanaisNoBancoDeDados.Name = "btn_BuscarCanaisNoBancoDeDados";
@@ -120,7 +124,8 @@ namespace Projeto_SegFy
             this.Controls.Add(this.btn_BuscarCanaisNoYoutube);
             this.Controls.Add(this.btn_BuscarNoBanco);
             this.Controls.Add(this.btn_buscarVideosDoYouTube);
-            this.Cursor = System.Windows.Forms.Cursors.No;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inicio";
             this.Text = "Projeto SegFy";
             this.Load += new System.EventHandler(this.Inicio_Load);

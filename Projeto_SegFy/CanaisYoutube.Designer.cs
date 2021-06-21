@@ -29,18 +29,20 @@ namespace Projeto_SegFy
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CanaisYoutube));
             this.btn_cadastrar = new System.Windows.Forms.Button();
             this.btn_pesquisar = new System.Windows.Forms.Button();
             this.dg_dados = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_pesquisa = new System.Windows.Forms.TextBox();
             this.Canal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Link = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_pesquisa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg_dados)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_cadastrar
             // 
+            this.btn_cadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cadastrar.Location = new System.Drawing.Point(74, 378);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(835, 54);
@@ -51,6 +53,7 @@ namespace Projeto_SegFy
             // 
             // btn_pesquisar
             // 
+            this.btn_pesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_pesquisar.Location = new System.Drawing.Point(794, 5);
             this.btn_pesquisar.Name = "btn_pesquisar";
             this.btn_pesquisar.Size = new System.Drawing.Size(115, 23);
@@ -73,6 +76,19 @@ namespace Projeto_SegFy
             this.dg_dados.Size = new System.Drawing.Size(835, 323);
             this.dg_dados.TabIndex = 7;
             // 
+            // Canal
+            // 
+            this.Canal.HeaderText = "Nome do Canal";
+            this.Canal.Name = "Canal";
+            // 
+            // Link
+            // 
+            this.Link.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Link.HeaderText = "Link do Canal";
+            this.Link.Name = "Link";
+            this.Link.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Link.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -90,19 +106,6 @@ namespace Projeto_SegFy
             this.txt_pesquisa.TabIndex = 5;
             this.txt_pesquisa.TextChanged += new System.EventHandler(this.txt_pesquisa_TextChanged);
             // 
-            // Canal
-            // 
-            this.Canal.HeaderText = "Nome do Canal";
-            this.Canal.Name = "Canal";
-            // 
-            // Link
-            // 
-            this.Link.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Link.HeaderText = "Link do Canal";
-            this.Link.Name = "Link";
-            this.Link.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Link.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // CanaisYoutube
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -113,6 +116,7 @@ namespace Projeto_SegFy
             this.Controls.Add(this.dg_dados);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_pesquisa);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CanaisYoutube";
             this.Text = "CanaisYoutube";
             ((System.ComponentModel.ISupportInitialize)(this.dg_dados)).EndInit();

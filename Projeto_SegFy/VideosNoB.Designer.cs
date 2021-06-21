@@ -29,6 +29,7 @@ namespace Projeto_SegFy
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VideosNoB));
             this.btn_pesquisar_video_bd = new System.Windows.Forms.Button();
             this.dg_dados_video_bd = new System.Windows.Forms.DataGridView();
             this.TituloDoVideo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +43,7 @@ namespace Projeto_SegFy
             // 
             // btn_pesquisar_video_bd
             // 
+            this.btn_pesquisar_video_bd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_pesquisar_video_bd.Location = new System.Drawing.Point(793, 14);
             this.btn_pesquisar_video_bd.Name = "btn_pesquisar_video_bd";
             this.btn_pesquisar_video_bd.Size = new System.Drawing.Size(114, 23);
@@ -119,6 +121,7 @@ namespace Projeto_SegFy
             this.Controls.Add(this.dg_dados_video_bd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_pesquisa_video_bd);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VideosNoB";
             this.Text = "VideosNoB";
             this.Load += new System.EventHandler(this.VideosNoB_Load);

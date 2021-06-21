@@ -29,17 +29,19 @@ namespace Projeto_SegFy
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CanaisNoBD));
             this.btn_pesquisar_video_bd = new System.Windows.Forms.Button();
             this.dg_dados_video_bd = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_pesquisa_video_bd = new System.Windows.Forms.TextBox();
             this.TituloDoVideo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Canal = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_pesquisa_video_bd = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg_dados_video_bd)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_pesquisar_video_bd
             // 
+            this.btn_pesquisar_video_bd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_pesquisar_video_bd.Location = new System.Drawing.Point(794, 6);
             this.btn_pesquisar_video_bd.Name = "btn_pesquisar_video_bd";
             this.btn_pesquisar_video_bd.Size = new System.Drawing.Size(114, 23);
@@ -62,6 +64,19 @@ namespace Projeto_SegFy
             this.dg_dados_video_bd.Size = new System.Drawing.Size(835, 396);
             this.dg_dados_video_bd.TabIndex = 11;
             // 
+            // TituloDoVideo
+            // 
+            this.TituloDoVideo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TituloDoVideo.HeaderText = "Nome Do Canal";
+            this.TituloDoVideo.Name = "TituloDoVideo";
+            // 
+            // Canal
+            // 
+            this.Canal.HeaderText = "Link do Canal";
+            this.Canal.Name = "Canal";
+            this.Canal.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Canal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -78,19 +93,6 @@ namespace Projeto_SegFy
             this.txt_pesquisa_video_bd.Size = new System.Drawing.Size(715, 23);
             this.txt_pesquisa_video_bd.TabIndex = 9;
             // 
-            // TituloDoVideo
-            // 
-            this.TituloDoVideo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TituloDoVideo.HeaderText = "Nome Do Canal";
-            this.TituloDoVideo.Name = "TituloDoVideo";
-            // 
-            // Canal
-            // 
-            this.Canal.HeaderText = "Link do Canal";
-            this.Canal.Name = "Canal";
-            this.Canal.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Canal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // CanaisNoBD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -100,6 +102,7 @@ namespace Projeto_SegFy
             this.Controls.Add(this.dg_dados_video_bd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_pesquisa_video_bd);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CanaisNoBD";
             this.Text = "CanaisNoBD";
             ((System.ComponentModel.ISupportInitialize)(this.dg_dados_video_bd)).EndInit();

@@ -29,6 +29,7 @@ namespace Projeto_SegFy
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.txt_pesquisa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dg_dados = new System.Windows.Forms.DataGridView();
@@ -103,6 +104,7 @@ namespace Projeto_SegFy
             // 
             // btn_pesquisar
             // 
+            this.btn_pesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_pesquisar.Location = new System.Drawing.Point(794, 11);
             this.btn_pesquisar.Name = "btn_pesquisar";
             this.btn_pesquisar.Size = new System.Drawing.Size(115, 23);
@@ -113,6 +115,7 @@ namespace Projeto_SegFy
             // 
             // btn_cadastrar
             // 
+            this.btn_cadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cadastrar.Location = new System.Drawing.Point(74, 384);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(835, 54);
@@ -132,6 +135,7 @@ namespace Projeto_SegFy
             this.Controls.Add(this.dg_dados);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_pesquisa);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Pesquisa de Videos no Youtube";
             this.Load += new System.EventHandler(this.Form2_Load);
